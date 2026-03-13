@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ralph TUI">
+  <rect width="64" height="64" rx="16" fill="#2563EB"/>
+  <path d="M16 20h32v24H16z" fill="#0F172A" opacity=".18"/>
+  <path d="M18 18h28c4.4 0 8 3.6 8 8v12c0 4.4-3.6 8-8 8H18z" fill="#EFF6FF"/>
+  <path d="M20 24h16v4H20zm0 8h24v4H20zm0 8h18v4H20z" fill="#2563EB"/>
+  <path d="M47 19 35 31l12 12" fill="none" stroke="#93C5FD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+</svg>

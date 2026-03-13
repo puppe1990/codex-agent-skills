@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ralph Remote"
+  short_description: "Controlar instâncias remotas do Ralph"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#D97706"
+  default_prompt: "Use $ralph-tui-remote para configurar ou operar instâncias remotas do Ralph TUI."

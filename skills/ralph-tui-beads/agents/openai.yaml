@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ralph Beads"
+  short_description: "Executar Ralph TUI com Beads"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#BE123C"
+  default_prompt: "Use $ralph-tui-beads para preparar ou rodar Ralph TUI com Beads ou Beads Rust."

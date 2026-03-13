@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Ralph Remote">
+  <rect width="160" height="160" rx="32" fill="#D97706"/>
+  <rect x="24" y="40" width="40" height="52" rx="10" fill="#FFF7ED"/>
+  <rect x="96" y="58" width="40" height="52" rx="10" fill="#FFF7ED"/>
+  <path d="M58 106c18 0 30-12 30-30" fill="none" stroke="#FCD34D" stroke-linecap="round" stroke-width="10"/>
+  <path d="m84 58 8 22 22-8" fill="none" stroke="#FCD34D" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <text x="80" y="142" fill="#FFEDD5" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">REMOTE</text>
+</svg>

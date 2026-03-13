@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Ralph TUI">
+  <rect width="160" height="160" rx="32" fill="#2563EB"/>
+  <rect x="20" y="26" width="120" height="96" rx="18" fill="#EFF6FF"/>
+  <path d="M38 52h44v8H38zm0 18h66v8H38zm0 18h52v8H38z" fill="#2563EB"/>
+  <path d="M115 40 87 68l28 28" fill="none" stroke="#93C5FD" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <text x="80" y="142" fill="#DBEAFE" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">RALPH TUI</text>
+</svg>

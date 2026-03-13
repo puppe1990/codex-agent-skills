@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Ralph Beads">
+  <rect width="160" height="160" rx="32" fill="#BE123C"/>
+  <circle cx="50" cy="56" r="14" fill="#FFE4E6"/>
+  <circle cx="110" cy="56" r="14" fill="#FFE4E6"/>
+  <circle cx="80" cy="106" r="14" fill="#FFE4E6"/>
+  <path d="M64 56h32M58 68l16 26m28-26-16 26" fill="none" stroke="#FDA4AF" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <text x="80" y="142" fill="#FFE4E6" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">BEADS</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Ralph TUI Codex">
+  <rect width="160" height="160" rx="32" fill="#0F766E"/>
+  <circle cx="80" cy="72" r="42" fill="#F0FDFA"/>
+  <path d="M54 54h34v8H54zm0 18h24v8H54zm0 18h34v8H54z" fill="#0F766E"/>
+  <path d="M95 48v48" fill="none" stroke="#14B8A6" stroke-linecap="round" stroke-width="10"/>
+  <path d="m82 60 13-12 13 12M82 84l13 12 13-12" fill="none" stroke="#14B8A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <text x="80" y="142" fill="#CCFBF1" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">CODEX</text>
+</svg>
