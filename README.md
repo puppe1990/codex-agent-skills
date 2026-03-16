@@ -4,9 +4,9 @@ A Codex-focused skills repository organized in the format expected by the Vercel
 
 Each skill lives inside `skills/<skill-name>/` and includes at least one `SKILL.md` file. This layout matches the format accepted by `npx skills add`, which can install skills from a GitHub repository, git URL, or local path.
 
-This repository currently has two clusters of skills:
+This repository currently has two families of skills:
 - `ralph-tui*` skills for operating Ralph TUI workflows with Codex, PRDs, Beads, and remote execution
-- product-thinking skills for simulating user journeys, stress-testing product ideas, improving naming, tying system behavior to business impact, and turning failures into actionable guidance
+- product-thinking skills for critique, UX empathy, naming, NFR prioritization, and actionable diagnostics
 
 ## Included Skills
 
@@ -18,13 +18,25 @@ This repository currently has two clusters of skills:
 - `ralph-tui-remote`: configures and operates remote Ralph TUI instances
 - `ralph-tui-beads`: uses Beads or Beads Rust as the source of work instead of `prd.json`
 
-### Product Thinking
+### Product Thinking: Journey Critique
 
 - `scenario-plot-hole-detective`: simulates user journeys, finds skipped steps, discovery gaps, and edge cases
 - `product-plot-hole-roast`: a sharper, more adversarial critique for exposing fragile product narratives and adoption risks
+
+### Product Thinking: UX Empathy and Discoverability
+
 - `shoe-shifting-selective-amnesia`: reviews UX and flows as if the reviewer had no implementation knowledge, testing signifiers and discoverability
+
+### Product Thinking: Language and Ontology
+
 - `ontology-mapping-naming`: maps product concepts and improves naming so terminology matches the user's mental model
+
+### Product Thinking: Product Architecture and NFRs
+
 - `nfr-optimizer`: connects latency, availability, and reliability work to user journeys, scenario metrics, and business outcomes
+
+### Product Thinking: Diagnostics and Prevention
+
 - `actionable-diagnostics-shift-left`: rewrites errors and warnings so they are contextual, actionable, and triggered earlier when possible
 
 ## Structure
@@ -49,22 +61,20 @@ codex-agent-skills/
 
 ## When To Use Which Skill
 
-### Product-Thinking Flow
+### Product-Thinking Categories
 
-The product-thinking skills now form a compact toolkit:
+The product-thinking skills can be selected by category:
 
-1. `scenario-plot-hole-detective`
-   Use for scenario simulation, skipped steps, edge cases, and adoption gaps.
-2. `product-plot-hole-roast`
-   Use for a sharper, more adversarial critique of weak proposals.
-3. `shoe-shifting-selective-amnesia`
-   Use for testing whether the UX still works after stripping away builder-only knowledge.
-4. `ontology-mapping-naming`
-   Use for naming, ontology alignment, searchability, and domain language fit.
-5. `nfr-optimizer`
-   Use for deciding where latency, availability, or consistency work will matter most to users and the business.
-6. `actionable-diagnostics-shift-left`
-   Use for rewriting confusing errors and moving warnings and validations earlier in the flow.
+1. Journey critique
+   `scenario-plot-hole-detective`, `product-plot-hole-roast`
+2. UX empathy and discoverability
+   `shoe-shifting-selective-amnesia`
+3. Language and ontology
+   `ontology-mapping-naming`
+4. Product architecture and NFRs
+   `nfr-optimizer`
+5. Diagnostics and prevention
+   `actionable-diagnostics-shift-left`
 
 These skills are complementary rather than redundant. A good sequence is often:
 - simulate the journey
@@ -172,14 +182,18 @@ Use $ralph-tui-prd-run to turn this PRD into a runnable Ralph TUI workflow.
 
 ## Product-Thinking Coverage
 
-Taken together, the product-thinking skills cover six recurring product-minded engineering questions:
+Taken together, the product-thinking skills cover five recurring product-minded engineering categories:
 
-- Is the journey complete, or does the story have plot holes?
-- Is the proposal weak under stronger criticism?
-- Does the interface still work when we remove builder-only knowledge?
-- Do the names and concepts match the user's ontology?
-- Are we optimizing the right nonfunctional requirement for user and business impact?
-- Are failures explained clearly and prevented early enough?
+- Journey critique
+  Is the journey complete, or does the story have plot holes? Is the proposal weak under stronger criticism?
+- UX empathy and discoverability
+  Does the interface still work when we remove builder-only knowledge?
+- Language and ontology
+  Do the names and concepts match the user's ontology?
+- Product architecture and NFRs
+  Are we optimizing the right nonfunctional requirement for user and business impact?
+- Diagnostics and prevention
+  Are failures explained clearly and prevented early enough?
 
 ## Notes
 
