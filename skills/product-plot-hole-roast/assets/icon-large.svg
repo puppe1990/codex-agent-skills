@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Plot-Hole Roast">
+  <rect width="160" height="160" rx="32" fill="#991B1B"/>
+  <path d="M36 102c0-23 17-40 44-40s44 17 44 40" fill="none" stroke="#FCA5A5" stroke-linecap="round" stroke-width="12"/>
+  <circle cx="62" cy="58" r="9" fill="#FEE2E2"/>
+  <circle cx="98" cy="58" r="9" fill="#FEE2E2"/>
+  <path d="M65 106h30" fill="none" stroke="#FEE2E2" stroke-linecap="round" stroke-width="7"/>
+  <path d="M44 34 28 18m88 16 16-16" fill="none" stroke="#FCA5A5" stroke-linecap="round" stroke-width="7"/>
+  <text x="80" y="144" fill="#FECACA" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">ROAST</text>
+</svg>

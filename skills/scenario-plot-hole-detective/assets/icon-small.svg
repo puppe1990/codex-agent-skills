@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Scenario Detective">
+  <rect width="64" height="64" rx="16" fill="#B45309"/>
+  <circle cx="28" cy="28" r="14" fill="#FEF3C7"/>
+  <path d="M38 38l10 10" fill="none" stroke="#FDE68A" stroke-linecap="round" stroke-width="6"/>
+  <path d="M22 28h12m-6-6v12" fill="none" stroke="#92400E" stroke-linecap="round" stroke-width="3"/>
+  <circle cx="28" cy="28" r="13" fill="none" stroke="#92400E" stroke-width="3"/>
+</svg>
