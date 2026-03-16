@@ -1,39 +1,39 @@
 # Attack Angles
 
-Use estes angulos quando o roast inicial nao for suficiente.
+Use these angles when the initial roast is not enough.
 
-## 1. Descoberta
+## 1. Discovery
 
-- Como a pessoa descobre que isso existe?
-- O produto pede comportamento que nunca ensinou?
-- Existe algum canal ou elemento que empurre naturalmente para a feature?
+- How does the person discover this exists?
+- Does the product ask for behavior it never taught?
+- Is there any channel or element that naturally pushes the user toward the feature?
 
-## 2. Confianca
+## 2. Trust
 
-- Em que momento o usuario precisa confiar dinheiro, dados ou tempo?
-- O produto da sinais suficientes de seguranca e reversibilidade?
-- O que acontece se ele hesitar?
+- At what moment does the user need to trust you with money, data, or time?
+- Does the product provide enough signals of safety and reversibility?
+- What happens if the user hesitates?
 
-## 3. Retomada
+## 3. Resumption
 
-- Se o usuario for interrompido, ele volta para onde?
-- O sistema preserva contexto apos login, refresh ou troca de dispositivo?
-- O fluxo depende de memoria desnecessaria?
+- If the user gets interrupted, where do they return?
+- Does the system preserve context after login, refresh, or device switching?
+- Does the flow depend on unnecessary memory?
 
-## 4. Recorrencia
+## 4. Recurrence
 
-- O segundo uso fica mais facil ou continua custoso?
-- O produto aprende algo util sobre o usuario?
-- A feature e util fora do demo?
+- Does the second use get easier, or stay costly?
+- Does the product learn anything useful about the user?
+- Is the feature useful outside the demo?
 
-## 5. Operacao
+## 5. Operations
 
-- Que integracoes, dados ou processos humanos precisam funcionar?
-- O texto esconde dependencia de outro time?
-- O caso feliz exige coordenação improvavel?
+- Which integrations, data flows, or human processes need to work?
+- Does the text hide a dependency on another team?
+- Does the happy path require unlikely coordination?
 
-## 6. Medicao
+## 6. Measurement
 
-- A metrica mostra sucesso do usuario ou apenas clique?
-- Como voce saberia que a jornada realmente ficou melhor?
-- Que sinal de fracasso apareceria primeiro?
+- Does the metric show user success or just clicks?
+- How would you know the journey actually got better?
+- Which failure signal would show up first?

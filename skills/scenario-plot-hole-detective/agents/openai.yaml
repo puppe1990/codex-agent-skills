@@ -1,7 +1,7 @@
 interface:
   display_name: "Scenario Detective"
-  short_description: "Simular jornadas e achar buracos na trama"
+  short_description: "Simulate journeys and find plot holes"
   icon_small: "./assets/icon-small.svg"
   icon_large: "./assets/icon-large.svg"
   brand_color: "#B45309"
-  default_prompt: "Use $scenario-plot-hole-detective para simular a jornada do usuario, encontrar passos pulados, edge cases e falhas narrativas nesta proposta."
+  default_prompt: "Use $scenario-plot-hole-detective to simulate the user journey and find skipped steps, edge cases, and narrative failures in this proposal."

@@ -1,74 +1,74 @@
 # Scenario Detective Checklists
 
-Use estas checklists apenas quando precisar ir alem da critica inicial.
+Use these checklists only when you need to go beyond the initial critique.
 
-## 1. Checklist de simulacao
+## 1. Simulation checklist
 
-- Quem e a persona exata?
-- Qual o motivo imediato?
-- Em que ambiente isso acontece?
-- O usuario esta com pressa, distraido ou interrompivel?
-- O que ele sabe antes de abrir o produto?
-- Como ele descobre a funcionalidade?
-- Qual e a primeira acao visivel?
-- O que confirma progresso?
-- O que pode dar errado?
-- Como ele retoma depois de interromper?
-- O que acontece apos concluir?
+- Who exactly is the persona?
+- What is the immediate motive?
+- In what environment does this happen?
+- Is the user rushed, distracted, or interruptible?
+- What do they know before opening the product?
+- How do they discover the functionality?
+- What is the first visible action?
+- What confirms progress?
+- What can go wrong?
+- How do they resume after interruption?
+- What happens after completion?
 
-## 2. Tipos comuns de buraco na trama
+## 2. Common plot-hole types
 
-- passo pulado
-- edge case ignorado
-- canal de descoberta inexistente
-- nomenclatura pouco intuitiva
-- dependencia externa nao tratada
-- estado vazio sem orientacao
-- erro sem proxima acao
-- retorno apos login sem preservacao de contexto
-- fluxo bom para power user e ruim para novato
-- feature util no demo e fraca no uso recorrente
+- skipped step
+- ignored edge case
+- nonexistent discovery channel
+- unintuitive naming
+- unhandled external dependency
+- empty state without guidance
+- error without next action
+- post-login return without context preservation
+- flow that works for power users and fails for novices
+- feature that is useful in the demo and weak in recurring use
 
-## 3. Personas para tensionar
+## 3. Personas to stress-test
 
-Rode a simulacao ao menos por estes tres filtros quando relevante:
+Run the simulation through at least these three filters when relevant:
 
-- usuario novo: baixa familiaridade, mais medo e menos contexto
-- usuario recorrente: quer atalhos, menos atrito e continuidade
-- usuario avancado: explora limites, quer velocidade e previsibilidade
+- new user: low familiarity, more fear, less context
+- recurring user: wants shortcuts, less friction, and continuity
+- advanced user: pushes limits, wants speed and predictability
 
-Se houver marketplace, plataforma ou produto B2B, simule tambem os lados diferentes do sistema.
+If this is a marketplace, platform, or B2B product, also simulate the different sides of the system.
 
-## 4. Converter em scenario tests
+## 4. Convert into scenario tests
 
-Ao sair da critica e entrar em execucao:
+When moving from critique into execution:
 
-- nomeie o cenario pelo objetivo do usuario
-- descreva pre-condicoes
-- liste a sequencia de passos observaveis
-- defina o sucesso visivel para o usuario
-- defina falhas importantes e mensagens esperadas
-- cubra retomada, segundo uso e variacoes prioritarias
+- name the scenario by the user's goal
+- describe preconditions
+- list the sequence of observable steps
+- define visible success for the user
+- define important failures and expected messages
+- cover resumption, second use, and priority variations
 
-## 5. Critica de PRD ou spec
+## 5. PRD or spec critique
 
-Pergunte:
+Ask:
 
-- a historia termina ou para no meio da feature?
-- ha evidencia de que esse fluxo importa para a persona?
-- a proposta resolve o problema ou apenas adiciona interface?
-- o que precisa ser verdadeiro em dados, permissoes ou integracoes?
-- quais metricas mostrariam sucesso na jornada?
-- quais perguntas precisam ser respondidas antes de implementar?
+- does the story end, or does it stop in the middle of the feature?
+- is there evidence that this flow matters to the persona?
+- does the proposal solve the problem, or just add interface?
+- what must be true about data, permissions, or integrations?
+- which metrics would show success in the journey?
+- which questions need to be answered before implementation?
 
-## 6. Arquitetura guiada por jornada
+## 6. Journey-driven architecture
 
-Quando a proposta implicar backend, plataforma ou escala, transforme a jornada em requisitos:
+When the proposal affects backend, platform, or scale, turn the journey into requirements:
 
-- latencia aceitavel por etapa
-- consistencia percebida pelo usuario
-- tolerancia a atraso, duplicidade ou reordenacao
-- estados que precisam sobreviver a refresh, login ou troca de dispositivo
-- cenarios reais que devem ser reproduzidos em simulacoes de carga
+- acceptable latency per step
+- user-perceived consistency
+- tolerance for delay, duplication, or reordering
+- states that must survive refresh, login, or device switching
+- real scenarios that should be reproduced in load simulations
 
-Nao simule chamadas isoladas se o problema real e uma sequencia de acoes do usuario.
+Do not simulate isolated calls if the real problem is a sequence of user actions.

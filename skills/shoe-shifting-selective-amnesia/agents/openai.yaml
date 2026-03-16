@@ -1,0 +1,7 @@
+interface:
+  display_name: "Shoe-Shifting"
+  short_description: "Test UX without forbidden knowledge"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#1D4ED8"
+  default_prompt: "Use $shoe-shifting-selective-amnesia to review this experience with selective amnesia, ignoring internal team knowledge and checking whether the signifiers are sufficient."

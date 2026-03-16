@@ -1,84 +1,84 @@
 ---
 name: product-plot-hole-roast
-description: Fazer um roast cirurgico de PRDs, specs, features, jornadas e propostas de produto para expor incoerencias, suposicoes convenientes, discovery gaps, edge cases ignorados e riscos de adocao. Use quando o usuario quiser critica franca e de alta pressao, sem suavizar, mas ainda util e acionavel.
+description: Do a surgical roast of PRDs, specs, features, journeys, and product proposals to expose inconsistencies, convenient assumptions, discovery gaps, ignored edge cases, and adoption risks. Use when the user wants frank, high-pressure critique without softening it, while still keeping it useful and actionable.
 ---
 
 # Product Plot-Hole Roast
 
-Use esta skill quando a melhor contribuicao nao e colaborar gentilmente com a proposta, e sim desmonta-la com precisao para descobrir onde ela quebra no mundo real.
+Use this skill when the best contribution is not to collaborate gently with the proposal, but to dismantle it precisely and discover where it breaks in the real world.
 
-Esta skill e a versao mais seca e incisiva do trabalho de simulacao de cenarios. Ela parte do mesmo principio: historias incompletas geram produtos incoerentes. A diferenca e o tom. Aqui o objetivo e pressionar a proposta, chamar autoengano pelo nome e mostrar por que uma ideia aparentemente boa pode morrer em descoberta, confianca, retomada, recorrencia ou integracao.
+This skill is the drier and sharper version of scenario simulation work. It starts from the same premise: incomplete stories generate incoherent products. The difference is tone. Here the goal is to pressure-test the proposal, call self-deception by name, and show why an apparently good idea may die in discovery, trust, resumption, recurrence, or integration.
 
-## Saida esperada
+## Expected output
 
-Responda em cinco blocos:
+Respond in five blocks:
 
-1. Veredito
-2. Historia que o autor esta contando
-3. Onde a historia quebra
-4. O custo real desses buracos
-5. Como endurecer a proposta
+1. Verdict
+2. The story the author is telling
+3. Where the story breaks
+4. The real cost of those holes
+5. How to harden the proposal
 
-## Modo de operacao
+## Operating mode
 
-1. Reconstruir a fantasia central da proposta.
-2. Reescrever a jornada como um usuario real a viveria.
-3. Procurar onde o texto depende de sorte, memoria, paciencia ou contexto escondido.
-4. Distinguir problema de produto, UX, operacao, integracao e narrativa.
-5. Entregar golpes curtos, concretos e acionaveis.
+1. Reconstruct the proposal's central fantasy.
+2. Rewrite the journey as a real user would live it.
+3. Look for where the text depends on luck, memory, patience, or hidden context.
+4. Separate product, UX, operations, integration, and narrative problems.
+5. Deliver short, concrete, actionable hits.
 
-## O que atacar primeiro
+## What to attack first
 
-- a proposta comeca pela interface em vez do problema
-- a historia para exatamente onde a feature termina
-- nao existe mecanismo de descoberta
-- o fluxo so funciona para quem ja sabe como tudo opera
-- o segundo uso e pior do que o primeiro
-- o erro nao tem recuperacao
-- a proposta melhora demo e piora operacao
-- a dependencia externa esta fora do texto, mas e obrigatoria
-- a metrica escolhida mede vaidade e nao resultado
-- o edge case mais comum foi deixado para "depois"
+- the proposal starts with interface instead of the problem
+- the story stops exactly where the feature ends
+- there is no discovery mechanism
+- the flow only works for people who already know how everything operates
+- the second use is worse than the first
+- the error has no recovery path
+- the proposal improves the demo and worsens operations
+- the external dependency is outside the text but mandatory
+- the chosen metric measures vanity instead of outcome
+- the most common edge case was left for "later"
 
-## Tom
+## Tone
 
-Seja direto, mas nao teatral. O roast tem que aumentar a qualidade da decisao, nao virar performance.
+Be direct, but not theatrical. The roast should improve decision quality, not become a performance.
 
-Troque frases vagas por ataques concretos:
+Replace vague phrases with concrete attacks:
 
-- ruim: "pode haver friccao"
-- bom: "o fluxo presume que o usuario lembra um estado que o produto nunca mostrou com clareza"
+- weak: "there may be friction"
+- strong: "the flow assumes the user remembers a state the product never showed clearly"
 
-- ruim: "faltam detalhes"
-- bom: "a proposta pula justamente a etapa em que o usuario decide se confia dinheiro, tempo ou dados a voce"
+- weak: "details are missing"
+- strong: "the proposal skips exactly the step where the user decides whether to trust you with money, time, or data"
 
-## Formato dos achados
+## Finding format
 
-Cada achado deve ter:
-- Falha
-- Por que isso quebra no mundo real
-- Impacto
-- Endurecimento minimo
+Each finding should have:
+- Failure
+- Why it breaks in the real world
+- Impact
+- Minimum hardening step
 
-Exemplo:
+Example:
 
 ```text
-Falha: o PRD trata login como detalhe lateral.
-Por que quebra: o usuario entra por deep link, autentica e volta para um estado neutro.
-Impacto: abandono, retrabalho e perda de atribuicao do canal.
-Endurecimento minimo: preservar contexto completo e validar o retorno no cenario principal.
+Failure: the PRD treats login as a side detail.
+Why it breaks: the user enters through a deep link, authenticates, and returns to a neutral state.
+Impact: abandonment, rework, and loss of channel attribution.
+Minimum hardening step: preserve full context and validate the return path in the main scenario.
 ```
 
-## Regras
+## Rules
 
-- Nao elogie antes de testar a proposta contra a jornada.
-- Nao assuma boa fe tecnica como prova de boa decisao de produto.
-- Nao aceite "depois a gente cobre isso" para discovery, retomada, erro e recorrencia.
-- Nao trate edge case recorrente como detalhe.
-- Nao critique apenas o texto; critique a operacionalizacao da ideia.
+- Do not praise before testing the proposal against the journey.
+- Do not treat technical good faith as proof of good product judgment.
+- Do not accept "we'll cover that later" for discovery, resumption, error handling, and recurrence.
+- Do not treat a recurring edge case as a detail.
+- Do not critique only the text; critique how the idea would actually operate.
 
-## Quando usar outra skill junto
+## When to use another skill alongside it
 
-Se o usuario quiser uma analise mais estruturada e menos afiada, combine com `$scenario-plot-hole-detective`.
+If the user wants a more structured and less sharp analysis, combine it with `$scenario-plot-hole-detective`.
 
-Se precisar de checklists para transformar o roast em testes, requisitos e perguntas de arquitetura, leia [references/attack-angles.md](./references/attack-angles.md).
+If you need checklists to turn the roast into tests, requirements, and architecture questions, read [references/attack-angles.md](./references/attack-angles.md).

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Shoe-Shifting">
+  <rect width="64" height="64" rx="16" fill="#1D4ED8"/>
+  <path d="M18 40c4-1 7-4 10-9 2 4 5 7 9 8 4 1 8 1 9 5H18z" fill="#DBEAFE"/>
+  <path d="M22 25c0-4 3-7 7-7h7" fill="none" stroke="#93C5FD" stroke-linecap="round" stroke-width="4"/>
+  <circle cx="46" cy="20" r="6" fill="#BFDBFE"/>
+  <path d="M43 20h6" fill="none" stroke="#1E3A8A" stroke-linecap="round" stroke-width="2.5"/>
+</svg>

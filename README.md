@@ -17,6 +17,7 @@ This repository currently has two clusters of skills:
 - `ralph-tui-beads`: uses Beads or Beads Rust as the source of work instead of `prd.json`
 - `scenario-plot-hole-detective`: simulates user journeys, finds skipped steps, discovery gaps, and edge cases
 - `product-plot-hole-roast`: a sharper, more adversarial critique for exposing fragile product narratives and adoption risks
+- `shoe-shifting-selective-amnesia`: reviews UX and flows as if the reviewer had no implementation knowledge, testing signifiers and discoverability
 
 ## Structure
 
@@ -31,7 +32,8 @@ codex-agent-skills/
     ├── ralph-tui-remote/
     ├── ralph-tui-beads/
     ├── scenario-plot-hole-detective/
-    └── product-plot-hole-roast/
+    ├── product-plot-hole-roast/
+    └── shoe-shifting-selective-amnesia/
 ```
 
 ## When To Use Which Skill
@@ -39,6 +41,8 @@ codex-agent-skills/
 Use `scenario-plot-hole-detective` when you want a structured review of a PRD, spec, feature flow, or UX journey through the lens of persona + motivation + full scenario simulation.
 
 Use `product-plot-hole-roast` when you want a harder critique that calls out convenient assumptions, incomplete stories, discovery failures, bad recovery paths, and likely adoption problems without softening the message.
+
+Use `shoe-shifting-selective-amnesia` when you want to test whether the interface, names, and flow still make sense after stripping away all internal knowledge that only the builders have.
 
 Use the `ralph-tui*` skills when the task is operational: setting up Ralph, choosing the right tracker, converting PRDs, resuming sessions, or controlling remote runs.
 
@@ -73,6 +77,7 @@ Install one of the product-thinking skills:
 ```bash
 npx skills add /path/to/codex-agent-skills --skill scenario-plot-hole-detective -a codex -g -y
 npx skills add /path/to/codex-agent-skills --skill product-plot-hole-roast -a codex -g -y
+npx skills add /path/to/codex-agent-skills --skill shoe-shifting-selective-amnesia -a codex -g -y
 ```
 
 ## GitHub Installation
@@ -94,6 +99,7 @@ Install one of the product-thinking skills from GitHub:
 ```bash
 npx skills add puppe1990/codex-agent-skills --skill scenario-plot-hole-detective -a codex -g -y
 npx skills add puppe1990/codex-agent-skills --skill product-plot-hole-roast -a codex -g -y
+npx skills add puppe1990/codex-agent-skills --skill shoe-shifting-selective-amnesia -a codex -g -y
 ```
 
 ## Example Prompts
@@ -102,6 +108,8 @@ npx skills add puppe1990/codex-agent-skills --skill product-plot-hole-roast -a c
 Use $scenario-plot-hole-detective to review this PRD for skipped steps, edge cases, and discovery gaps.
 
 Use $product-plot-hole-roast to tear apart this onboarding proposal and show why adoption might fail.
+
+Use $shoe-shifting-selective-amnesia to review this UI as if you had no implementation knowledge and tell me where the interface is expecting mind-reading.
 
 Use $ralph-tui-prd-run to turn this PRD into a runnable Ralph TUI workflow.
 ```

@@ -1,139 +1,139 @@
 ---
 name: scenario-plot-hole-detective
-description: Simular jornadas de usuario e agir como um "detetive de buracos na trama" em PRDs, specs, fluxos, features, UX, arquitetura e testes. Use quando Codex precisar transformar requisitos em cenarios concretos, identificar passos pulados, mecanismos de descoberta ausentes, edge cases, dependencias escondidas, risco de baixa adocao, falhas de feedback, friccao na jornada, ou validar se uma proposta realmente fecha a historia do ponto de vista do usuario.
+description: Simulate user journeys and act as a "plot-hole detective" for PRDs, specs, flows, features, UX, architecture, and tests. Use when Codex needs to turn requirements into concrete scenarios, identify skipped steps, missing discovery mechanisms, edge cases, hidden dependencies, adoption risk, feedback failures, journey friction, or validate whether a proposal actually closes the story from the user's point of view.
 ---
 
 # Scenario Plot-Hole Detective
 
-Use esta skill quando houver uma ideia, PRD, spec, fluxo ou feature que pareca coerente no papel, mas possa quebrar quando um usuario real tentar atravessar a historia inteira.
+Use this skill when an idea, PRD, spec, flow, or feature looks coherent on paper but may break when a real user tries to move through the whole story.
 
-A base desta skill vem da abordagem de Drew Hoskins: pensar produto como combinacao de persona, motivo e simulacao completa da jornada. O trabalho aqui nao e elogiar a proposta. E tensiona-la ate aparecerem passos pulados, edge cases e decisoes que so funcionam para quem tem "conhecimento proibido" de quem implementou.
+This skill is based on Drew Hoskins's approach: think about product as a combination of persona, motive, and full journey simulation. The job here is not to praise the proposal. It is to pressure-test it until skipped steps, edge cases, and decisions that only work for someone with builder-only "forbidden knowledge" start to show up.
 
-## Resultado esperado
+## Expected output
 
-Produza a resposta em quatro blocos, salvo se o usuario pedir outro formato:
+Produce the response in four blocks unless the user asks for another format:
 
-1. Cenario base
-2. Simulacao passo a passo
-3. Buracos na trama
-4. Ajustes recomendados
+1. Base scenario
+2. Step-by-step simulation
+3. Plot holes
+4. Recommended fixes
 
-Se o contexto estiver raso, declare as suposicoes em uma linha curta e siga em frente.
+If the context is thin, state the assumptions in one short line and continue.
 
-## Fluxo
+## Workflow
 
-1. Identificar o usuario principal.
-2. Explicitar o motivo imediato e o contexto de uso.
-3. Escrever a simulacao completa da jornada.
-4. Procurar buracos na trama.
-5. Converter os buracos em decisoes, testes ou perguntas.
+1. Identify the main user.
+2. Make the immediate motive and usage context explicit.
+3. Write the full journey simulation.
+4. Look for plot holes.
+5. Convert the holes into decisions, tests, or questions.
 
-## 1. Definir personagem e contexto
+## 1. Define the character and context
 
-Monte um personagem minimo com:
+Build a minimal character with:
 - persona
-- nivel de familiaridade
-- objetivo imediato
-- restricoes reais
+- familiarity level
+- immediate goal
+- real constraints
 
-Boas restricoes para considerar:
-- pouco tempo
-- memoria imperfeita
-- multitarefa
-- aversao a risco
-- conhecimento parcial do produto
+Good constraints to consider:
+- limited time
+- imperfect memory
+- multitasking
+- risk aversion
+- partial product knowledge
 
-Evite personagens abstratos como "o usuario". Diga quem e, o que quer agora e o que sabe de verdade.
+Avoid abstract characters like "the user". Say who they are, what they want right now, and what they truly know.
 
-## 2. Escrever a simulacao completa
+## 2. Write the full simulation
 
-Conte a historia inteira, nao apenas o trecho que favorece a feature.
+Tell the whole story, not just the slice that flatters the feature.
 
-Empurre a simulacao em tres direcoes:
-- O que aconteceu antes para o usuario chegar aqui?
-- Como ele descobriu o que fazer?
-- O que acontece logo depois da acao principal?
+Push the simulation in three directions:
+- What happened before the user got here?
+- How did they discover what to do?
+- What happens right after the main action?
 
-Uma boa simulacao:
-- justifica cada passo
-- mostra o que o usuario percebe
-- nao presume conhecimento interno do time
-- inclui consequencias e proximos passos
+A good simulation:
+- justifies each step
+- shows what the user perceives
+- does not assume internal team knowledge
+- includes consequences and next steps
 
-## 3. Investigar os buracos na trama
+## 3. Investigate the plot holes
 
-Procure primeiro estes dois tipos de falha:
+Look for these two failure types first:
 
-- Passo pulado
-- Edge case
+- skipped step
+- edge case
 
-Depois procure estas classes adicionais:
+Then look for these additional classes:
 
-- descoberta ausente: nada leva o usuario a descobrir a feature
-- aprendizado ausente: a interface nao ensina como usar
-- transicao quebrada: login, pagamento, permissao, confirmacao ou retorno interrompem a historia
-- dependencia invisivel: a proposta depende de outro time, dado, integracao ou comportamento nao garantido
-- memoria heroica: o fluxo presume que o usuario lembra algo improvavel
-- risco nao tratado: o usuario hesita porque pode perder dinheiro, tempo, dados ou contexto
-- feedback insuficiente: o sistema nao confirma, nao orienta ou nao corrige
-- incentivo desalinhado: a feature existe, mas nao ajuda a meta real da persona
-- trade-off escondido: melhora um caso e piora outro publico importante
-- abuso ou uso indevido: a affordance pode empurrar o usuario para um uso errado ou inseguro
+- missing discovery: nothing leads the user to discover the feature
+- missing learnability: the interface does not teach how to use it
+- broken transition: login, payment, permission, confirmation, or return interrupts the story
+- invisible dependency: the proposal depends on another team, data source, integration, or behavior that is not guaranteed
+- heroic memory: the flow assumes the user remembers something unlikely
+- unhandled risk: the user hesitates because they may lose money, time, data, or context
+- insufficient feedback: the system does not confirm, guide, or correct
+- misaligned incentive: the feature exists but does not serve the persona's real goal
+- hidden trade-off: it improves one case while hurting another important audience
+- misuse or unsafe use: the affordance may push the user into the wrong or unsafe behavior
 
-## 4. Perguntas que o detetive deve fazer
+## 4. Questions the detective should ask
 
-Use perguntas curtas e agressivamente concretas:
+Use short and aggressively concrete questions:
 
-- Como o usuario descobre que isso existe?
-- O que ele precisa saber antes desse clique?
-- O que ele ve quando da errado?
-- O que acontece se ele interromper no meio?
-- O que muda para usuario novo, casual e power user?
-- O que acontece no segundo uso, nao so no primeiro?
-- Qual etapa depende de memoria, paciencia ou sorte demais?
-- Que caso comum ficou fora porque a historia ficou conveniente demais?
-- Se a feature der certo tecnicamente e mesmo assim fracassar em adocao, por que seria?
+- How does the user discover this exists?
+- What do they need to know before this click?
+- What do they see when it fails?
+- What happens if they get interrupted halfway through?
+- What changes for new, casual, and power users?
+- What happens on the second use, not just the first?
+- Which step depends too much on memory, patience, or luck?
+- Which common case was left out because the story became too convenient?
+- If the feature works technically and still fails in adoption, why would that happen?
 
-## 5. Como reportar achados
+## 5. How to report findings
 
-Priorize por impacto na jornada, nao por elegancia tecnica.
+Prioritize by journey impact, not technical elegance.
 
-Para cada buraco importante, reporte:
-- o ponto da jornada
-- o que foi assumido indevidamente
-- o risco para usuario ou negocio
-- a correcao mais simples
+For each important hole, report:
+- the point in the journey
+- what was assumed incorrectly
+- the user or business risk
+- the simplest fix
 
-Formato recomendado:
+Recommended format:
 
 ```text
-Buraco: O fluxo presume que o usuario lembra onde salvou o rascunho.
-Risco: abandono e suporte desnecessario.
-Correcao: exibir "Continuar de onde parei" na entrada principal e manter contexto apos login.
+Hole: The flow assumes the user remembers where they saved the draft.
+Risk: abandonment and unnecessary support load.
+Fix: show "Continue where I left off" at the main entry point and preserve context after login.
 ```
 
-## Quando aprofundar
+## When to go deeper
 
-Se a tarefa tocar design, roadmap, arquitetura ou testes, leia [references/checklists.md](./references/checklists.md).
+If the task touches design, roadmap, architecture, or tests, read [references/checklists.md](./references/checklists.md).
 
-Use esse arquivo para:
-- transformar achados em scenario tests
-- avaliar descoberta, onboarding e retomada de fluxo
-- tensionar PRDs e specs antes da implementacao
-- simular cargas e impactos arquiteturais a partir de jornadas reais
+Use that file to:
+- turn findings into scenario tests
+- evaluate discovery, onboarding, and flow resumption
+- pressure-test PRDs and specs before implementation
+- simulate load and architectural impact from real journeys
 
-## Regras operacionais
+## Operating rules
 
-- Nao aceite o recorte mais favoravel ao autor da proposta.
-- Nao critique so a tela; critique a jornada completa.
-- Nao pule direto para solucao sem antes explicitar a falha narrativa.
-- Nao trate "usuario" como massa uniforme; varie por persona quando isso mudar a decisao.
-- Nao assuma que shipping encerra o trabalho; considere feedback, medicao e iteracao.
+- Do not accept the slice most favorable to the proposal's author.
+- Do not critique only the screen; critique the full journey.
+- Do not jump straight to a solution before making the narrative failure explicit.
+- Do not treat "the user" as a uniform blob; vary by persona when that changes the decision.
+- Do not assume shipping ends the work; consider feedback, measurement, and iteration.
 
-## Sinais de boa aplicacao
+## Signs of good application
 
-Esta skill esta sendo bem usada quando a resposta:
-- revela ao menos um passo antes e um depois da feature principal
-- encontra discovery gaps ou edge cases que nao estavam na spec
-- transforma intuicao em cenarios verificaveis
-- gera decisoes de produto, UX, arquitetura ou teste com base na jornada
+This skill is being used well when the response:
+- reveals at least one step before and one after the main feature
+- finds discovery gaps or edge cases that were not in the spec
+- turns intuition into verifiable scenarios
+- generates product, UX, architecture, or testing decisions based on the journey
