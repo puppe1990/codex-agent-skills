@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Actionable Diagnostics">
+  <rect width="64" height="64" rx="16" fill="#DC2626"/>
+  <path d="M18 46h28l10-12-10-12H18z" fill="#FEE2E2"/>
+  <path d="M28 22v16m0 6h.01" fill="none" stroke="#991B1B" stroke-linecap="round" stroke-width="4"/>
+  <path d="M39 30h8" fill="none" stroke="#FCA5A5" stroke-linecap="round" stroke-width="3"/>
+</svg>

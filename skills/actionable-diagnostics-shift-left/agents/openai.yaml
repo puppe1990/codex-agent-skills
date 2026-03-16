@@ -1,0 +1,7 @@
+interface:
+  display_name: "Actionable Diagnostics"
+  short_description: "Rewrite errors and shift failures earlier"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#DC2626"
+  default_prompt: "Use $actionable-diagnostics-shift-left to rewrite these errors and warnings so they are actionable, contextual, and shifted earlier in the user journey."

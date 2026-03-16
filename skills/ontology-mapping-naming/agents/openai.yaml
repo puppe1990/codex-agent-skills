@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ontology Naming"
+  short_description: "Map concepts and improve product naming"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#0F766E"
+  default_prompt: "Use $ontology-mapping-naming to review this product's concepts, labels, and terminology for ontology mismatches, ambiguity, and weak discoverability."

@@ -1,0 +1,7 @@
+interface:
+  display_name: "NFR Optimizer"
+  short_description: "Tie system performance to user and business impact"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#7C3AED"
+  default_prompt: "Use $nfr-optimizer to connect this system performance or reliability issue to user journeys, scenario metrics, and business impact."

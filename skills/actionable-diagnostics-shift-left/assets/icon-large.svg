@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Actionable Diagnostics">
+  <rect width="160" height="160" rx="32" fill="#DC2626"/>
+  <path d="M38 110h68l28-34-28-34H38z" fill="#FEE2E2"/>
+  <path d="M66 42v46m0 18h.01" fill="none" stroke="#991B1B" stroke-linecap="round" stroke-width="10"/>
+  <path d="M92 64h20" fill="none" stroke="#FCA5A5" stroke-linecap="round" stroke-width="8"/>
+  <text x="80" y="144" fill="#FECACA" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">DIAGNOSTICS</text>
+</svg>

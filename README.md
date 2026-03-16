@@ -6,18 +6,26 @@ Each skill lives inside `skills/<skill-name>/` and includes at least one `SKILL.
 
 This repository currently has two clusters of skills:
 - `ralph-tui*` skills for operating Ralph TUI workflows with Codex, PRDs, Beads, and remote execution
-- product-thinking skills for simulating user journeys, stress-testing product ideas, and exposing weak assumptions in PRDs and specs
+- product-thinking skills for simulating user journeys, stress-testing product ideas, improving naming, tying system behavior to business impact, and turning failures into actionable guidance
 
 ## Included Skills
+
+### Ralph TUI
 
 - `ralph-tui`: base skill to set up, run, resume, and diagnose Ralph TUI flows
 - `ralph-tui-codex`: specialized flow for running Ralph TUI with Codex as the agent
 - `ralph-tui-prd-run`: takes a PRD from idea or Markdown to an executable Ralph TUI run
 - `ralph-tui-remote`: configures and operates remote Ralph TUI instances
 - `ralph-tui-beads`: uses Beads or Beads Rust as the source of work instead of `prd.json`
+
+### Product Thinking
+
 - `scenario-plot-hole-detective`: simulates user journeys, finds skipped steps, discovery gaps, and edge cases
 - `product-plot-hole-roast`: a sharper, more adversarial critique for exposing fragile product narratives and adoption risks
 - `shoe-shifting-selective-amnesia`: reviews UX and flows as if the reviewer had no implementation knowledge, testing signifiers and discoverability
+- `ontology-mapping-naming`: maps product concepts and improves naming so terminology matches the user's mental model
+- `nfr-optimizer`: connects latency, availability, and reliability work to user journeys, scenario metrics, and business outcomes
+- `actionable-diagnostics-shift-left`: rewrites errors and warnings so they are contextual, actionable, and triggered earlier when possible
 
 ## Structure
 
@@ -33,16 +41,52 @@ codex-agent-skills/
     ├── ralph-tui-beads/
     ├── scenario-plot-hole-detective/
     ├── product-plot-hole-roast/
-    └── shoe-shifting-selective-amnesia/
+    ├── shoe-shifting-selective-amnesia/
+    ├── ontology-mapping-naming/
+    ├── nfr-optimizer/
+    └── actionable-diagnostics-shift-left/
 ```
 
 ## When To Use Which Skill
+
+### Product-Thinking Flow
+
+The product-thinking skills now form a compact toolkit:
+
+1. `scenario-plot-hole-detective`
+   Use for scenario simulation, skipped steps, edge cases, and adoption gaps.
+2. `product-plot-hole-roast`
+   Use for a sharper, more adversarial critique of weak proposals.
+3. `shoe-shifting-selective-amnesia`
+   Use for testing whether the UX still works after stripping away builder-only knowledge.
+4. `ontology-mapping-naming`
+   Use for naming, ontology alignment, searchability, and domain language fit.
+5. `nfr-optimizer`
+   Use for deciding where latency, availability, or consistency work will matter most to users and the business.
+6. `actionable-diagnostics-shift-left`
+   Use for rewriting confusing errors and moving warnings and validations earlier in the flow.
+
+These skills are complementary rather than redundant. A good sequence is often:
+- simulate the journey
+- pressure-test the proposal
+- remove builder knowledge
+- tighten naming
+- prioritize NFR work
+- improve diagnostics and prevention
+
+### Skill Selection
 
 Use `scenario-plot-hole-detective` when you want a structured review of a PRD, spec, feature flow, or UX journey through the lens of persona + motivation + full scenario simulation.
 
 Use `product-plot-hole-roast` when you want a harder critique that calls out convenient assumptions, incomplete stories, discovery failures, bad recovery paths, and likely adoption problems without softening the message.
 
 Use `shoe-shifting-selective-amnesia` when you want to test whether the interface, names, and flow still make sense after stripping away all internal knowledge that only the builders have.
+
+Use `ontology-mapping-naming` when the problem is conceptual language itself: product terms, labels, categories, and names that do not match the user's ontology or make related concepts hard to distinguish.
+
+Use `nfr-optimizer` when the question is where to improve latency, availability, consistency, or scale from a product perspective, based on which user journeys and business outcomes are most affected.
+
+Use `actionable-diagnostics-shift-left` when the problem is confusing errors, weak warnings, late validations, or costly user mistakes that should be intercepted earlier.
 
 Use the `ralph-tui*` skills when the task is operational: setting up Ralph, choosing the right tracker, converting PRDs, resuming sessions, or controlling remote runs.
 
@@ -78,6 +122,9 @@ Install one of the product-thinking skills:
 npx skills add /path/to/codex-agent-skills --skill scenario-plot-hole-detective -a codex -g -y
 npx skills add /path/to/codex-agent-skills --skill product-plot-hole-roast -a codex -g -y
 npx skills add /path/to/codex-agent-skills --skill shoe-shifting-selective-amnesia -a codex -g -y
+npx skills add /path/to/codex-agent-skills --skill ontology-mapping-naming -a codex -g -y
+npx skills add /path/to/codex-agent-skills --skill nfr-optimizer -a codex -g -y
+npx skills add /path/to/codex-agent-skills --skill actionable-diagnostics-shift-left -a codex -g -y
 ```
 
 ## GitHub Installation
@@ -100,6 +147,9 @@ Install one of the product-thinking skills from GitHub:
 npx skills add puppe1990/codex-agent-skills --skill scenario-plot-hole-detective -a codex -g -y
 npx skills add puppe1990/codex-agent-skills --skill product-plot-hole-roast -a codex -g -y
 npx skills add puppe1990/codex-agent-skills --skill shoe-shifting-selective-amnesia -a codex -g -y
+npx skills add puppe1990/codex-agent-skills --skill ontology-mapping-naming -a codex -g -y
+npx skills add puppe1990/codex-agent-skills --skill nfr-optimizer -a codex -g -y
+npx skills add puppe1990/codex-agent-skills --skill actionable-diagnostics-shift-left -a codex -g -y
 ```
 
 ## Example Prompts
@@ -111,8 +161,25 @@ Use $product-plot-hole-roast to tear apart this onboarding proposal and show why
 
 Use $shoe-shifting-selective-amnesia to review this UI as if you had no implementation knowledge and tell me where the interface is expecting mind-reading.
 
+Use $ontology-mapping-naming to review this product's terminology and suggest more idiomatic, domain-native names.
+
+Use $nfr-optimizer to tell me whether we should improve search latency or checkout latency first based on user journeys and conversion impact.
+
+Use $actionable-diagnostics-shift-left to rewrite these error messages so users understand what failed and what to do next, and suggest where to validate earlier.
+
 Use $ralph-tui-prd-run to turn this PRD into a runnable Ralph TUI workflow.
 ```
+
+## Product-Thinking Coverage
+
+Taken together, the product-thinking skills cover six recurring product-minded engineering questions:
+
+- Is the journey complete, or does the story have plot holes?
+- Is the proposal weak under stronger criticism?
+- Does the interface still work when we remove builder-only knowledge?
+- Do the names and concepts match the user's ontology?
+- Are we optimizing the right nonfunctional requirement for user and business impact?
+- Are failures explained clearly and prevented early enough?
 
 ## Notes
 

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Ontology Naming">
+  <rect width="160" height="160" rx="32" fill="#0F766E"/>
+  <circle cx="44" cy="50" r="14" fill="#CCFBF1"/>
+  <circle cx="116" cy="50" r="14" fill="#99F6E4"/>
+  <circle cx="80" cy="108" r="16" fill="#F0FDFA"/>
+  <path d="M58 54 72 90M102 54 88 90M58 50h44" fill="none" stroke="#134E4A" stroke-linecap="round" stroke-width="8"/>
+  <text x="80" y="144" fill="#CCFBF1" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">ONTOLOGY</text>
+</svg>
