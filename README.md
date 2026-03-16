@@ -6,7 +6,7 @@ Each skill lives inside `skills/<skill-name>/` and includes at least one `SKILL.
 
 This repository currently has two families of skills:
 - `ralph-tui*` skills for operating Ralph TUI workflows with Codex, PRDs, Beads, and remote execution
-- product-thinking skills for critique, UX empathy, naming, NFR prioritization, and actionable diagnostics
+- product-engineering skills for critique, UX empathy, naming, NFR prioritization, and actionable diagnostics
 
 ## Included Skills
 
@@ -18,24 +18,24 @@ This repository currently has two families of skills:
 - `ralph-tui-remote`: configures and operates remote Ralph TUI instances
 - `ralph-tui-beads`: uses Beads or Beads Rust as the source of work instead of `prd.json`
 
-### Product Thinking: Journey Critique
+### Product Engineering: Journey Critique
 
-- `scenario-plot-hole-detective`: simulates user journeys, finds skipped steps, discovery gaps, and edge cases
-- `product-plot-hole-roast`: a sharper, more adversarial critique for exposing fragile product narratives and adoption risks
+- `scenario-plot-hole-detective`: simulates user journeys, finds skipped steps, discovery gaps, and edge cases; plain-language job: journey critique
+- `product-plot-hole-roast`: a sharper, more adversarial critique for exposing fragile product narratives and adoption risks; plain-language job: proposal critique
 
-### Product Thinking: UX Empathy and Discoverability
+### Product Engineering: UX Empathy and Discoverability
 
 - `shoe-shifting-selective-amnesia`: reviews UX and flows as if the reviewer had no implementation knowledge, testing signifiers and discoverability
 
-### Product Thinking: Language and Ontology
+### Product Engineering: Language and Ontology
 
 - `ontology-mapping-naming`: maps product concepts and improves naming so terminology matches the user's mental model
 
-### Product Thinking: Product Architecture and NFRs
+### Product Engineering: Product Architecture and NFRs
 
 - `nfr-optimizer`: connects latency, availability, and reliability work to user journeys, scenario metrics, and business outcomes
 
-### Product Thinking: Diagnostics and Prevention
+### Product Engineering: Diagnostics and Prevention
 
 - `actionable-diagnostics-shift-left`: rewrites errors and warnings so they are contextual, actionable, and triggered earlier when possible
 
@@ -61,9 +61,9 @@ codex-agent-skills/
 
 ## When To Use Which Skill
 
-### Product-Thinking Categories
+### Product Engineering Categories
 
-The product-thinking skills can be selected by category:
+The product-engineering skills can be selected by category:
 
 1. Journey critique
    `scenario-plot-hole-detective`, `product-plot-hole-roast`
@@ -126,7 +126,7 @@ Install into the current project scope instead of the global scope:
 npx skills add /path/to/codex-agent-skills --skill ralph-tui
 ```
 
-Install one of the product-thinking skills:
+Install one of the product-engineering skills:
 
 ```bash
 npx skills add /path/to/codex-agent-skills --skill scenario-plot-hole-detective -a codex -g -y
@@ -151,7 +151,7 @@ Install a specific skill from GitHub:
 npx skills add puppe1990/codex-agent-skills --skill ralph-tui-remote -a codex -g -y
 ```
 
-Install one of the product-thinking skills from GitHub:
+Install one of the product-engineering skills from GitHub:
 
 ```bash
 npx skills add puppe1990/codex-agent-skills --skill scenario-plot-hole-detective -a codex -g -y
@@ -180,9 +180,9 @@ Use $actionable-diagnostics-shift-left to rewrite these error messages so users 
 Use $ralph-tui-prd-run to turn this PRD into a runnable Ralph TUI workflow.
 ```
 
-## Product-Thinking Coverage
+## Product Engineering Coverage
 
-Taken together, the product-thinking skills cover five recurring product-minded engineering categories:
+Taken together, the product-engineering skills cover five recurring product-minded engineering categories:
 
 - Journey critique
   Is the journey complete, or does the story have plot holes? Is the proposal weak under stronger criticism?

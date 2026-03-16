@@ -1,7 +1,7 @@
 interface:
   display_name: "Plot-Hole Roast"
-  short_description: "Critique proposals with brutal precision"
+  short_description: "Proposal critique with brutal precision"
   icon_small: "./assets/icon-small.svg"
   icon_large: "./assets/icon-large.svg"
   brand_color: "#991B1B"
-  default_prompt: "Use $product-plot-hole-roast to do a surgical roast of this proposal and expose the product, journey, and adoption holes."
+  default_prompt: "Use $product-plot-hole-roast for proposal critique: do a surgical roast of this proposal and expose the product, journey, and adoption holes."
