@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Audit Collector"
+  short_description: "Coleta auditoria web bruta por URL"
+  default_prompt: "Use $website-audit-collector para coletar um relatório bruto de auditoria de website a partir de uma URL."

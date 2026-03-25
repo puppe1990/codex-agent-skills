@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit JSON Normalizer"
+  short_description: "Normaliza JSON bruto de auditoria web"
+  default_prompt: "Use $audit-json-normalizer para transformar um JSON bruto de auditoria em um resumo canônico por módulo."

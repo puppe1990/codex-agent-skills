@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audit Report Writer"
+  short_description: "Redige relatório técnico e executivo"
+  default_prompt: "Use $audit-report-writer para redigir um relatório técnico ou executivo com prioridades, riscos e próximos passos."

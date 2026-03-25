@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Audit UI Exporter"
+  short_description: "Exporta JSON pronto para UI"
+  default_prompt: "Use $website-audit-ui-exporter para transformar um audit normalizado em JSON pronto para a interface."

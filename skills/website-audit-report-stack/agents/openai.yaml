@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Audit Report Stack"
+  short_description: "Orquestra relatórios de auditoria web"
+  default_prompt: "Use $website-audit-report-stack para gerar um relatório técnico ou executivo a partir de um JSON bruto de auditoria de website."
